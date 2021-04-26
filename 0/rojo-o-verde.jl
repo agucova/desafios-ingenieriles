@@ -13,6 +13,9 @@ macro bind(def, element)
     end
 end
 
+# ╔═╡ 869c1e9a-7c02-4f62-8442-480a3fb75e26
+md"""### VisitING Ingeniería UC - Abril 2021"""
+
 # ╔═╡ 6eeaa9d4-a6cb-11eb-3b50-25ca960b09a2
 md"# Desafío ingenieril: ¿Rojo o verde?"
 
@@ -153,9 +156,12 @@ Imagina correr este programa 21 veces, con x siendo cada uno de los números ent
 
 **¿Cuántas veces el programa anunciará "ROJO"?**
 
+Puedes contestar el desafío [aquí](https://forms.gle/H7FfeLZth58x8DMZA). El plazo para soluciones es el **viernes 30 de abril a las 23:59**.
+
 """
 
 # ╔═╡ Cell order:
+# ╟─869c1e9a-7c02-4f62-8442-480a3fb75e26
 # ╟─6eeaa9d4-a6cb-11eb-3b50-25ca960b09a2
 # ╟─d2c62e69-72f2-4c4b-8c4a-737eb407b50f
 # ╟─c9126d86-47fc-453c-91ab-0ed5027a9156
