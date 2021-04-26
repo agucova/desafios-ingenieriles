@@ -21,12 +21,14 @@ md"""
 ## Introducción
 Un **algoritmo** es una secuencia de instrucciones paso-a-paso para reallizar una tarea.
 
+![Mapa trazando la ruta de la casa de Alicia a la casa de Bob](https://i.imgur.com/R2ZbkgV.png)
+
 Si Alicia está manejando a la casa de Bob, un programa de navegación (como Google Maps) puede darle las siguientes instrucciones:
 
 ```python
-Gira a la izquierda en la calle Baker
+Gira a la derecha hacia la avenida Siempreviva
 Sigue manejando por 3 cuadras
-Gira a la izquierda a la calle Avenida Siempreviva y sigue manejando dos cuadras
+Gira a la izquierda a la calle Baker y sigue manejando dos cuadras
 Gira a la derecha y maneja por una cuadra
 Llegaste!
 ```
@@ -53,7 +55,7 @@ else:
 Entonces las instrucciones de manejar para Alicia se pueden ver algo así:
 
 ```python
-Gira a la derecha en la Avenida Siempreviva
+Gira a la derecha hacia la Avenida Siempreviva
 Maneja tres cuadras
 if se puede girar a la izquierda:
 	Gira a la izquierda y maneja dos cuadras
@@ -157,7 +159,7 @@ Imagina correr este programa 21 veces, con x siendo cada uno de los números ent
 
 # ╔═╡ Cell order:
 # ╟─6eeaa9d4-a6cb-11eb-3b50-25ca960b09a2
-# ╟─d2c62e69-72f2-4c4b-8c4a-737eb407b50f
+# ╠═d2c62e69-72f2-4c4b-8c4a-737eb407b50f
 # ╟─c9126d86-47fc-453c-91ab-0ed5027a9156
 # ╟─ba1c2c81-bcf3-4c0f-a306-5aa453c9ad32
 # ╟─23411cab-3117-42bf-a037-46e23d85c03a
