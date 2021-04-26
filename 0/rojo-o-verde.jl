@@ -79,8 +79,6 @@ else:
 anunciar: distancia
 ```
 
-Nota como usamos el formato `acción(descripción)` para denotar instrucciones.
-
 Los enunciados condicionales pueden anidarse, es decir, las instrucciones dentro de un enunciado `if` pueden incluir otro enunciado `if`.
 
 """
@@ -93,15 +91,15 @@ Aquí hay un algoritmo que anuncia tres distintos colores basados en la posició
 ```python
 dado: x, un número:
 if x < A:
-    "ROJO"
+    anunciar: "ROJO"
 else:
 	if x > B:
-		"VERDE"
+		anunciar: "VERDE"
 	else:
-		"NEGRO"
+		anunciar: "NEGRO"
 ```
 
-Digamos que A = 2 y B = 6. Hicimos parte del trabajo y programamos una copia del programa de arriba en este documento utilizando un lenguaje de programación llamado Julia. Para ver cómo funciona, prueba usar el deslizador de abajo para cambiar el valor de `x` y ver el resultado:
+Digamos que A = 2 y B = 6. Hicimos parte del trabajo y programamos una copia del programa de arriba en este documento utilizando un lenguaje de programación llamado [Julia](https://julialang.org/). Para ver cómo funciona, prueba usar el deslizador de abajo para cambiar el valor de `x` y ver el resultado:
 """
 
 # ╔═╡ ba1c2c81-bcf3-4c0f-a306-5aa453c9ad32
@@ -134,7 +132,7 @@ begin
 end
 
 # ╔═╡ 04faf528-bc1e-4a61-b27f-437c3d6f9909
-md"""Tip: Si quieres ver el código que hace funcionar el programa, selecciona la fila arriba de este texto y apreta el botón de 👁 a la izquierda."""
+md"""Tip: Si quieres ver el código que hace funcionar el programa, selecciona la fila justo arriba de este texto y apreta el botón de 👁 a la izquierda."""
 
 # ╔═╡ ce450f50-a6cb-11eb-1e16-bf1498b7cc2e
 md"### El desafío"
@@ -144,11 +142,11 @@ md"""Mira el siguiente programa:
 ```python
 if x > 6 - x^2:
 	if x^2 < 3 - 2x:
-		"ROJO"
+		anunciar: "ROJO"
 	else:
-		"VERDE"
+		anunciar: "VERDE"
 else:
-	"AZUL"
+	anunciar: "AZUL"
 ```
 
 Imagina correr este programa 21 veces, con x siendo cada uno de los números enteros desde -10 a 10. 
@@ -159,7 +157,7 @@ Imagina correr este programa 21 veces, con x siendo cada uno de los números ent
 
 # ╔═╡ Cell order:
 # ╟─6eeaa9d4-a6cb-11eb-3b50-25ca960b09a2
-# ╠═d2c62e69-72f2-4c4b-8c4a-737eb407b50f
+# ╟─d2c62e69-72f2-4c4b-8c4a-737eb407b50f
 # ╟─c9126d86-47fc-453c-91ab-0ed5027a9156
 # ╟─ba1c2c81-bcf3-4c0f-a306-5aa453c9ad32
 # ╟─23411cab-3117-42bf-a037-46e23d85c03a
