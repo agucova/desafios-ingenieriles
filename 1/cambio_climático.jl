@@ -59,7 +59,7 @@ $\frac{5}{14} * 0.47 + \frac{4}{14} * 0.21 + \frac{5}{14} * 0.29 \approx 0.31\te
 
 Eres un ingeniero trabajando para el [IPCC](https://www.ipcc.ch/) (el panel intergubernamental sobre cambio climático) y te piden estimar las emisiones anuales de $CO_2$ en gigatoneladas en base a los datos que ya tienes. **¿Cuál es tu mejor estimación?** (No utilices datos externos)
 
-Puedes contestar el desafío [aquí](https://forms.gle/H7FfeLZth58x8DMZA). El plazo para soluciones es el **viernes 21 de mayo a las 23:59**.
+Puedes contestar el desafío [aquí](https://docs.google.com/forms/d/e/1FAIpQLScFe29uxpCv_DFcqjaw-7rRplGnCwcFrc6bKwsHinjjkqZ_IQ/viewform). El plazo para soluciones es el **viernes 21 de mayo a las 23:59**.
 """
 
 
