@@ -5,7 +5,7 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ ba2191c8-b6ee-11eb-280b-9921e61d8d06
-md"""### VisitING Ingeniería UC - Abril 2021"""
+md"""### VisitING Ingeniería UC - Mayo 2021"""
 
 # ╔═╡ 9c21f12d-a9f4-4fc7-b58a-b8bf3a1e3c24
 md"# Desafío ingenieril: Estimando el Cambio Climático"
@@ -13,11 +13,11 @@ md"# Desafío ingenieril: Estimando el Cambio Climático"
 # ╔═╡ 1f7bf6ff-f98c-46fb-b078-9160509886ec
 md"""
 ## Introducción
-Las emisiones humanas de dióxido de carbono (CO₂) y otros gases invernaderos son la causa primaria del **cambio climático**, el que corresponde a uno de los desafíos mas urgentes de la humanidad.[¹](#referencias).
+Las emisiones humanas de dióxido de carbono ($CO_2$) y otros gases invernaderos son la causa primaria del **cambio climático**, el que corresponde a uno de los desafíos mas urgentes de la humanidad.[¹](#referencias).
 
 ![Volcán de Mauna Loa, dónde se encuentra el observatorio mas importante de CO2 en el planeta.](https://i.imgur.com/5YkbpoQ.png)
 
-El vínculo entre las temperaturas globales y las concentraciones de gases invernadero, especialmente el C02, ha sido verdadero a lo largo de la historia de la Tierra.[²](#referencias).
+El vínculo entre las temperaturas globales y las concentraciones de gases invernadero, especialmente el $CO_2$, ha sido verdadero a lo largo de la historia de la Tierra.[²](#referencias).
 
 Ahora, ¿cómo podemos estimar nuestro impacto en las emisiones? ¿O mejor aún, cómo podemos estimar las emisiones de todo el planeta?
 
@@ -45,42 +45,29 @@ Podrás notar que en general la tasa de gramos de $CO_2$ a gramos de combustible
 Para relacionar la energía con el $CO_2$, podemos obtener la cantidad de $CO_2$ producido por kilocaloría de energía dividiendo en base a las reacciones, lo que nos da 0.47, 0,24 y 0,27 g/kcal para carbón, gas, y gasolina, respectivamente.
 
 ## Las emisiones
-La energía producida por combustibles fósiles compone aproximadamente 80% de la producción mundial de electricidad, y un 77% de la producción eléctrica en Chile. Acorde con la IEA, la agencia internacional de energía, el mundo produce aproximadamente 17 terawatts-año (tip: tera $\rightarrow$ trillón), por lo que los combustibles fósiles deberían producir $\approx 14 \text{ TW-año}$, dividibles en 5, 4 y 5 para carbón, gas y gasolina respectivamente.
 
-Partiendo de esa división, podemos calcular el $CO_2$ producido por kcal para la suma de combustibles fósiles a partir de los números que teníamos antes, lo que es simplemente:
+![](https://static.scientificamerican.com/sciam/cache/file/8B6B0B7A-351F-4CDF-97DFED59CF5305E8_source.jpg?w=590&h=800&67FED11A-5F6D-4DDD-976215B41436D527)
+
+La energía producida por combustibles fósiles compone aproximadamente 80% de la producción mundial de electricidad, y un 77% de la producción eléctrica en Chile. Acorde con la IEA, la agencia internacional de energía, el mundo produce aproximadamente 17 terawatts-año (tip: tera $\rightarrow$ trillón), por lo que los combustibles fósiles deberían producir $\approx 14 \text{ TW-año}$, repartidos en 5, 4 y 5 para carbón, gas y gasolina respectivamente.
+
+Partiendo de esa división, podemos calcular el $CO_2$ producido por kcal de combustible fósil consumido a partir de los números que teníamos antes, lo que es simplemente:
 
 $\frac{5}{14} * 0.47 + \frac{4}{14} * 0.21 + \frac{5}{14} * 0.29 \approx 0.31\text{ g/kcal}$
 
-Podemos convertir 14 TW-año a kilocalorías por año, y nos da $\approx 10^{17}\text{ kcal/año}$, por lo que aprovechando el valor anterior:
-
-$0.31\text{g/kcal} \cdot 10^{17}\text{ kcal/año} \approx 3.1 \cdot 10^{13} \text{kg/año}$.
-
-Esto significa que **emitimos 31 gigatoneladas de $CO_2$** por año!
-
-## Contrastando con la realidad
-![](https://i.pinimg.com/originals/df/1a/e7/df1ae72cfd5e6d0d535c0ec99e708f6f.jpg)
-
-Ahora, este número no es tan útil porque lamentablemente no tenemos ninguna forma de medir directamente si es correcto. ¿Cómo podemos saber cuantas toneladas de $CO_2$ hay en la atmósfera?
-
-En la práctica, observatorios como el observatorio de Mauna Loa, en Hawaii, han recogido la **concentración de $CO_2$ en la atmósfera** (en ppm, particulas por millón), y de hecho mantienen registros detallados desde 1850 del $CO_2$ en la Tierra.
-
-Según Mauna Loa, en abril de 2021 la concentración de atmósferica de $CO_2$ se encuentra en $\approx 420$ ppm lo que contrasta a unos $280$ ppm antes de la revolución industrial.
-
-Para calcular los $ppm$ de nuestras emisiones, podemos dividir por la masa aproximada de la atmósfera:
-
-$\frac{31 \text{ Gt}}{5,000,000\text{ Gt}}\cdot \frac{1,000,000}{1}\text { ppm}$
-
-Que corregido por volumen nos da $2.5\text {ppm}$ de $CO_2$ emitido por año.
-
-
 ## El desafío
-Para mantener el calentamiento global bajo los $2^\text{o}C$, un escenario común que se plantea es mantener la concentración global de $CO_2$ bajo los 500 ppm para 2100. Estima, **¿Qué reducción en toneladas de combustibles fósiles consumidos anualmente, a nivel global, debemos lograr para cumplir ese escenario?**
+![](https://mma.gob.cl/wp-content/uploads/2018/02/IPPC-2-1.jpg)
+
+Eres un ingeniero trabajando para el [IPCC](https://www.ipcc.ch/) (el panel intergubernamental sobre cambio climático) y te piden estimar las emisiones anuales de $CO_2$ en gigatoneladas en base a los datos que ya tienes. **¿Cuál es tu mejor estimación?** (No utilices datos externos)
 
 Puedes contestar el desafío [aquí](https://forms.gle/H7FfeLZth58x8DMZA). El plazo para soluciones es el **viernes 21 de mayo a las 23:59**.
 """
 
 
+# ╔═╡ 24db3514-0faa-4ec3-90e1-39b11ca55792
+
+
 # ╔═╡ d87a082a-4ee3-4877-a520-9b61da990bb3
+
 md"""
 ## Referencias
 [1]: **IPCC, 2013: Climate Change 2013: The Physical Science Basis.** Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., D. Qin, G.-K. Plattner, M. Tignor, S.K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex and P.M. Midgley (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, 1535 pp.
@@ -90,7 +77,8 @@ md"""
 """
 
 # ╔═╡ Cell order:
-# ╠═ba2191c8-b6ee-11eb-280b-9921e61d8d06
+# ╟─ba2191c8-b6ee-11eb-280b-9921e61d8d06
 # ╟─9c21f12d-a9f4-4fc7-b58a-b8bf3a1e3c24
 # ╟─1f7bf6ff-f98c-46fb-b078-9160509886ec
+# ╟─24db3514-0faa-4ec3-90e1-39b11ca55792
 # ╟─d87a082a-4ee3-4877-a520-9b61da990bb3

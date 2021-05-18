@@ -14,7 +14,10 @@
    viewBox="0 0 850 600"
    id="svg202"
    sodipodi:docname="anomalia-temperatura.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:export-filename="/home/agucova/repos/desafios-ingenieriles/1/anomalia-temperatura.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <metadata
      id="metadata208">
     <rdf:RDF>
@@ -43,7 +46,7 @@
      id="namedview204"
      showgrid="false"
      inkscape:zoom="1.4811765"
-     inkscape:cx="277.81287"
+     inkscape:cx="137.04639"
      inkscape:cy="300"
      inkscape:window-x="1280"
      inkscape:window-y="27"
